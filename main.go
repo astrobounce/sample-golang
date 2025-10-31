@@ -133,6 +133,7 @@ func main() {
 		fmt.Println(line)
 	}
 	fmt.Println()
+	fmt.Println("Starting the server")
 	fmt.Printf("==> Server listening at %s 🚀\n", bindAddr)
 
 	if err := http.ListenAndServe(bindAddr, nil); err != nil {
